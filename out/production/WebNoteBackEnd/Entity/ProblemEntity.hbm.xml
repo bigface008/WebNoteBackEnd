@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="Entity">
+
+    <class name="Entity.ProblemEntity" table="problem">
+        <id name="problemId" column="problemID">
+            <generator class="native"/>
+        </id>
+        <property name="problemId"/>
+        <property name="userName"/>
+        <property name="problemName"/>
+        <property name="subject" />
+        <property name="semester" />
+        <property name="description" />
+        <property name="reason" />
+        <property name="answer" />
+        <property name="addDate" />
+        <property name="redoTimes" />
+        <property name="latestEditDate" />
+    </class>
+
+</hibernate-mapping>
